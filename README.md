@@ -6,33 +6,25 @@ A basic React app showing a "Codin 1" heading, running in a Docker container on 
 
 Clone the repo:
 
-```
-git clone <repo-link>
+git clone https://github.com/jkopparthi/Assignment-11
 cd kopparthi_jashwanth_coding_assignment11
-```
 
 Build the image:
 
-```
 docker build -t codin1_image .
-```
 
 Run the container:
 
-```
 docker run -p 7775:3000 --name kopparthi_jashwanth_coding_assignment11 codin1_image
-```
 
 Open your browser:
 
-```
 http://localhost:7775
-```
 
-You should see **"Codin 1"** on the page.
+You should see "Codin 1" on the page.
 
 ## Notes
 
-- Port `3000` inside the container is mapped to `7775` on the host.
-- Workdir inside the container: `/kopparthi_jashwanth_site`
-- Stop the container: `docker stop kopparthi_jashwanth_coding_assignment11`
+- Port 3000 inside the container is mapped to 7775 on the host.
+- Workdir inside the container: /kopparthi_jashwanth_site
+- Stop the container: docker stop kopparthi_jashwanth_coding_assignment11
